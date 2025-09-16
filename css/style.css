@@ -729,6 +729,7 @@ a {
 }
 input[type="checkbox"]:checked+label .span-user-privacy {
     background-color: #404bbf;
+    fill: #F4F4FD;
     border: none;
 }
 .form-block{
