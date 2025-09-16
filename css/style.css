@@ -538,7 +538,7 @@ a {
     line-height: 1.17;
     letter-spacing: 0.04em;
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
 }
 .form-textarea{
     width: 100%;
@@ -729,4 +729,7 @@ a {
 
 .privacy-policy-input:checked+.lbl-user-privacy .input-checked-icon {
     opacity: 1;
+}
+.form-block{
+    margin-bottom: 8px;
 }
