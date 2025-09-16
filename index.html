@@ -484,66 +484,7 @@
         </div>
       </section>
     </main>
-    <div class="overlay-modal is-open">
-      <div class="modal">
-        <div class="close-svg">
-          <svg class="icon-close" width="8" height="8">
-            <use href="./images/icons.svg#icon-close"></use>
-          </svg>
-        </div>
-        <h3 class="modal-title">
-          Leave your contacts and we will call you back
-        </h3>
-        <form class="form" action="">
-          <label class="form-label" for="">
-            Name
-            <div class="input-svg">
-              <input class="form-input" type="text" name="user-name" />
-              <svg class="form-input-icon" width="12" height="12">
-                <use href="./images/icons.svg#icon-person"></use>
-              </svg>
-            </div>
-          </label>
-          <label class="form-label" for="">
-            Phone
-            <div class="input-svg">
-              <input class="form-input" type="text" name="user-phone" />
-              <svg class="form-input-icon" width="13" height="13">
-                <use href="./images/icons.svg#icon-phone"></use>
-              </svg>
-            </div>
-          </label>
-          <label class="form-label" for="">
-            Email
-            <div class="input-svg">
-              <input class="form-input" type="text" name="user-mail" />
-              <svg class="form-input-icon" width="15" height="12">
-                <use href="./images/icons.svg#icon-mail"></use>
-              </svg>
-            </div>
-          </label>
-          <label class="form-label" for=""
-            >Comment
-            <textarea
-              class="form-textarea"
-              placeholder="Text input"
-              name=""
-              id=""
-            ></textarea>
-          </label>
-          <div class="privacy-policy">
-            <input class="input-pp" type="checkbox" />
-            <p>
-              I accept the terms and conditions of the
-              <span class="pr-pol-text">Privacy Policy</span>
-            </p>
-          </div>
-          <div class="btn-block">
-            <button class="form-btn" type="submit">Send</button>
-          </div>
-        </form>
-      </div>
-    </div>
+
     <footer class="footer-page">
       <div class="content-footer">
         <div class="logo-block">
@@ -605,7 +546,114 @@
             </li>
           </ul>
         </div>
+        <div class="sub">
+          <p class="sub-p">Subscribe</p>
+          <form class="form-sub" action="">
+            <label class="lbl-sub" for="sub-id">
+              <input
+                type="email"
+                name="sub-id"
+                placeholder="E-mail"
+                class="input-sub"
+              />
+            </label>
+            <button type="submit" class="btn-sub">
+              Subscribe
+              <svg class="btn-sub-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+
+    <!--MODAL-->
+    <div class="overlay-modal is-open">
+      <div class="modal">
+        <button class="close-btn" type="button">
+          <svg class="icon-close" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <form class="form" action="">
+          <div class="form-block">
+            <label class="form-label" for="user-name">
+              Name
+              <div class="input-svg">
+                <input
+                  class="form-input"
+                  type="text"
+                  id="user-name"
+                  name="user-name"
+                />
+                <svg class="form-input-icon" width="18" height="24">
+                  <use href="./images/icons.svg#icon-person"></use>
+                </svg>
+              </div>
+            </label>
+            <label class="form-label" for="user-phone">
+              Phone
+              <div class="input-svg">
+                <input
+                  class="form-input"
+                  type="text"
+                  name="user-phone"
+                  id="user-phone"
+                />
+                <svg class="form-input-icon" width="18" height="24">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+              </div>
+            </label>
+            <label class="form-label" for="user-mail">
+              Email
+              <div class="input-svg">
+                <input
+                  class="form-input"
+                  type="text"
+                  name="user-mail"
+                  id="user-mail"
+                />
+                <svg class="form-input-icon" width="18" height="24">
+                  <use href="./images/icons.svg#icon-mail"></use>
+                </svg>
+              </div>
+            </label>
+            <label class="form-label" for="user-comment"
+              >Comment
+              <textarea
+                class="form-textarea"
+                placeholder="Text input"
+                name=""
+                id="user-comment"
+              ></textarea>
+            </label>
+            <div class="privacy-policy">
+              <input
+                class="visually-hidden"
+                type="checkbox"
+                id="user-privacy"
+                name="user-privacy"
+                value="true"
+              />
+              <label for="user-privacy" class="lbl-user-privacy"
+                >I accept the terms and conditions of the
+                <a href="" class="link-pp">Privacy Policy</a>
+                <span class="span-user-privacy">
+                  <svg class="form-input-icon" width="10" height="8">
+                    <use href="./images/icons.svg#icon-cheked"></use>
+                  </svg>
+                </span>
+              </label>
+            </div>
+
+            <button class="form-btn" type="submit">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
