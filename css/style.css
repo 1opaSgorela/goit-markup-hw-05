@@ -650,6 +650,9 @@ a {
     color: #ffffff;
 
 }
+.txtarea{
+    margin-bottom: 16px
+}
 .form-sub{
     display: flex;
     gap: 24px;
